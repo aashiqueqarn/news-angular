@@ -1,0 +1,14 @@
+<section class="news-card-wrapper">
+    <mat-card>
+        <mat-card-content>
+            <div *ngIf="article.urlToImage" class="image-url">
+                <img [ngSrc]="article.urlToImage" class="news-img" height="1" width="1" alt="Article Image">
+            </div>
+            <div class="article-details">
+                <h3 class="article-title">{{article.title}}</h3>
+                <span><i class="article-author">{{article.author ? article.author : 'Unknown'}}</i>, <strong>{{article.publishedAt | date: 'longDate'}}</strong></span>
+                <span class="article-description">{{article.description}}</span>
+            </div>
+        </mat-card-content>
+    </mat-card>    
+</section>

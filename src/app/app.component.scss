@@ -1,0 +1,17 @@
+.main-wrapper {
+    .header {
+        text-align: center;
+        height: 70px;
+        padding: 20px 0;
+        background-color: #000000;
+        .title-header {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FFFFFF;
+            padding: inherit;
+        }
+    }
+    .components {
+        padding: 1em;
+    }
+}

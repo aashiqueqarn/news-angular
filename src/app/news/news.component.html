@@ -1,0 +1,12 @@
+<article class="news-wrapper">
+    <div class="date-picker">
+        <mat-card class="demo-inline-calendar-card">
+            <mat-calendar (selectedChange)="onDateChange($event)" [(selected)]="selectedDate"></mat-calendar>
+        </mat-card>
+    </div>
+    <div class="main-news">
+        <div class="cards-list" *ngFor="let article of articles">
+            <app-news-card [article]="article"></app-news-card>
+        </div>
+    </div>
+</article>
